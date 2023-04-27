@@ -4,7 +4,7 @@
 This project involves scraping and analyzing customer reviews of Ryanair airline to determine overall sentiment and identify common themes among customer complaints. The goal is to provide insights that can help Ryanair improve its customer service and attract more customers.
 
 ## Data Collection
-To collect the data, we scraped reviews from the Skytrax website using BeautifulSoup and Selenium. We collected a total of 2252 reviews, which were stored in a CSV file.
+To collect the data, we scraped reviews from the Skytrax website using BeautifulSoup and Selenium. We collected a total of 2000 reviews, which were stored in a CSV file.
 
 ## Data Cleaning
 We cleaned the text data in the reviews column using various techniques such as removing special characters and numericals, converting all characters to lowercase, tokenizing each review, removing stopwords, and lemmatizing each word in each review. The resulting cleaned reviews were then saved in a new column called "cleaned reviews".
@@ -19,14 +19,20 @@ We visualized the distribution of sentiment categories in the dataset using a co
 Overall, our analysis suggests that negative sentiment is more prevalent in airline reviews and that customers are becoming less satisfied with Ryanair's services. Whatever the reason for the decline in sentiment, it is clear that Ryanair needs to take steps to improve its customer service. This could include addressing the specific issues that customers are complaining about, such as delays, cancellations, and poor customer service. By taking steps to improve its customer service, Ryanair can improve the overall customer experience and attract more customers.
 
 ## Requirements
-Python 3.9
-Beautiful Soup 4
-Selenium
-Pandas
-NLTK
-Matplotlib
-Seaborn
+- Python 3.9
+- Beautiful Soup 4
+- Selenium
+- Pandas
+- NLTK
+- Matplotlib
+- Seaborn
 
-##License
+## Future Work
+One limitation of this project is that the 2000 reviews may not be enough to provide a comprehensive understanding of the sentiment towards Ryanair. The accuracy of sentiment analysis largely depends on the size and quality of the dataset. Therefore, collecting more data could improve the accuracy of the sentiment analysis.
+
+
+## License
 This project is licensed under the MIT License. See the LICENSE file for more information.
 
+## Acknowledgments
+- Special thanks to Skytrax for providing the reviews data.
